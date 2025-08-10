@@ -1,0 +1,8 @@
+from pydantic import BaseModel
+
+class EvolutionData(BaseModel):
+    id: int
+    name: str
+    level: int
+    experience: int
+    description: str | None = None
